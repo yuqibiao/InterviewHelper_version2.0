@@ -1,0 +1,27 @@
+<resources>
+
+    <!--usual-->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!--toolBar-->
+    <dimen name="tb_height">48dp</dimen>
+    <!--主页底部菜单栏-->
+    <dimen name="main_btm_height">48dp</dimen>
+    <dimen name="main_btm_padding">5dp</dimen>
+    <dimen name="main_btm_ts">12sp</dimen>
+    <!--主页轮播图-->
+    <dimen name="home_vp_height">200dp</dimen>
+    <dimen name="home_vp_indicator_height">20dp</dimen>
+    <dimen name="home_vp_title_ts">22sp</dimen>
+    <!--navigation-->
+    <dimen name="nav_header_vertical_spacing">10dp</dimen>
+    <dimen name="nav_header_height">130dp</dimen>
+    <dimen name="nav_header_icon_height">65dp</dimen>
+    <dimen name="nav_header_icon_width">65dp</dimen>
+    <dimen name="nav_header_icon_margin_top">30dp</dimen>
+    <dimen name="nav_header_username_marginLeft">15dp</dimen>
+    <dimen name="nav_header_username_ts">18sp</dimen>
+    <dimen name="nav_header_QR_height">32dp</dimen>
+    <dimen name="nav_header_QR_width">32dp</dimen>
+
+</resources>

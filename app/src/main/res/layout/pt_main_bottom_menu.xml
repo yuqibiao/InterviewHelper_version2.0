@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main_btm"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/main_btm_height"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/main_btm_menu_bg"
+    android:orientation="horizontal">
+    <com.yyyu.interviewhelper.ui.widget.ChangeColorView
+        android:id="@+id/ccv_main"
+        style="@style/main_btm_menu"
+        app:change_icon="@mipmap/icon_home"
+        app:change_text="主页"/>
+    <com.yyyu.interviewhelper.ui.widget.ChangeColorView
+        android:id="@+id/ccv_exe"
+        style="@style/main_btm_menu"
+        app:change_icon="@mipmap/icon_exe"
+        app:change_text="练习"/>
+    <com.yyyu.interviewhelper.ui.widget.ChangeColorView
+        android:id="@+id/ccv_msg"
+        style="@style/main_btm_menu"
+        app:change_icon="@mipmap/icon_msg"
+        app:change_text="消息"/>
+    <com.yyyu.interviewhelper.ui.widget.ChangeColorView
+        android:id="@+id/ccv_love"
+        style="@style/main_btm_menu"
+        app:change_icon="@mipmap/icon_love"
+        app:change_text="喜爱"/>
+
+</LinearLayout>

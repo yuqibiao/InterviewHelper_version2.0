@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@drawable/side_nav_bar"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_icon"
+        android:layout_width="@dimen/nav_header_icon_width"
+        android:layout_height="@dimen/nav_header_icon_height"
+        android:layout_marginTop="@dimen/nav_header_icon_margin_top"
+        android:src="@mipmap/icon" />
+
+    <ImageView
+        android:layout_width="@dimen/nav_header_QR_height"
+        android:layout_height="@dimen/nav_header_QR_width"
+        android:src="@mipmap/icon_qr_code"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OfYu"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/civ_icon"
+        android:layout_marginLeft="@dimen/nav_header_username_marginLeft"
+        android:textSize="@dimen/nav_header_username_ts"
+        android:layout_toEndOf="@+id/civ_icon" />
+
+    <TextView
+        android:id="@+id/tv_intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/civ_icon"
+        android:layout_marginTop="@dimen/nav_header_vertical_spacing"
+        android:text="这里是登录用户的自我介绍.........."
+        android:singleLine="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+</RelativeLayout>

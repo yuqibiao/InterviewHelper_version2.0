@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme"  parent="@style/BaseAppTheme"></style>
+
+
+    <!--**************************  样式  ***********************-->
+    <!--主页底部menu的样式-->
+    <style name="main_btm_menu">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">@dimen/main_btm_padding</item>
+        <item name="change_text_size">@dimen/main_btm_ts</item>
+        <item name="android:clickable">true</item>
+        <item name="change_color">#fff</item>
+        <item name="change_text_color">#a9b7b7</item>
+    </style>
+
+</resources>

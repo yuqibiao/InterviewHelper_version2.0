@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+<!--自定义的ChangeColorView的自定义属性-->
+    <declare-styleable name="ChangeColorView">
+        <attr name="change_icon" format="reference" />
+        <attr name="change_color" format="color" />
+        <attr name="change_text" format="string" />
+        <attr name="change_text_color" format="color" />
+        <attr name="change_text_size" format="dimension" />
+    </declare-styleable>
+
+    <!--ViewPagerLooper-->
+    <declare-styleable name="ViewPageLooper">
+        <attr name="dot_normal_color" format="color"></attr>
+        <attr name="dot_selected_color" format="color"></attr>
+    </declare-styleable>
+
+</resources>
