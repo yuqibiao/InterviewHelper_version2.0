@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/home_main_color"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_edit_article"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/home_main_color"
+        android:fitsSystemWindows="true"
+        app:navigationIcon="@mipmap/icon_back"
+        app:title="编辑文章"
+        app:titleTextColor="@color/my_white">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+            <com.yyyu.interviewhelper.ui.widget.CustomProressBar
+                android:id="@+id/pb_edit"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                app:centerText="上传中"
+                app:centerTextColor="@color/love_main_color"
+                app:centerTextSize="8sp"
+                app:vipFristColor="@color/my_pink"
+                app:vipSecondColor="@color/love_main_color" />
+            <ImageButton
+                android:id="@+id/ib_send"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:padding="10dp"
+                android:src="@mipmap/edit_send" />
+        </FrameLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/et_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:padding="10dp"
+            android:background="@color/my_white"
+            android:theme="@style/et_article_edit"
+            android:hint="输入文章标题"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:id="@+id/ib_add_article_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/my_white"
+            android:src="@mipmap/icon_add_img"/>
+    </LinearLayout>
+
+    <com.yyyu.interviewhelper.ui.widget.rich_edit.RichTextEditor
+        android:id="@+id/re_article"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#fff" />
+
+    <!-- 底部的按钮 -->
+    <LinearLayout
+        android:id="@+id/ll_btm"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/home_main_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ib_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:gravity="center_horizontal"
+            android:src="@mipmap/icon_gallery" />
+
+        <ImageButton
+            android:id="@+id/ib_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="14dp"
+            android:background="@android:color/transparent"
+            android:gravity="center_horizontal"
+            android:src="@mipmap/icon_camera" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_clazz_choice"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/tv_board_choice"
+                android:gravity="center_vertical"
+                android:maxEms="5"
+                android:maxLines="1"
+                android:minHeight="50dp"
+                android:padding="5dp"
+                android:text="选择分类"
+                android:textColor="@color/my_white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_board_choice"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:maxEms="5"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:text="选择板块"
+                android:textColor="@color/my_white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,5 +1,6 @@
 package com.yyyu.interviewhelper.ui.fragment;
 
+import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -17,13 +18,13 @@ import android.view.ViewGroup;
 public abstract  class BaseFragment  extends Fragment{
 
     private View rootView;
-    protected Context context;
+    protected Context mContext;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         rootView = inflater.from(getActivity()).inflate(getLayoutId() , container , false);
-        context = getActivity();
+        mContext = getContext();
         beforeInit();
         initView();
         initListener();

@@ -7,9 +7,18 @@
     <color name="bg_gray_color">#E7E9E6</color>
     <color name="bg_trans_gray_color">#44000000</color>
     <color name="my_white">#fff</color>
-
-    <color name="home_main_color">#70A4C6</color>
+    <color name="my_pink">#e97fa4</color>
+    <color name="tab_color">@color/colorAccent</color>
+    <!--usual_bg-->
+    <color name="normal_color">@color/my_white</color>
+    <color name="pressed_color">@color/my_pink</color>
+    <color name="home_main_color_light">#79bcc1</color>
+    <!--各个菜单fragment界面的主色调-->
+    <color name="home_main_color">#2EACB5</color>
     <color name="exe_main_color">#669900</color>
     <color name="msg_main_color">#FF8800</color>
     <color name="love_main_color">#FF5252</color>
+    <!--button-->
+    <color name="btn_bg_normal">@color/my_white</color>
+    <color name="btn_bg_pressed">@color/bg_gray_color</color>
 </resources>

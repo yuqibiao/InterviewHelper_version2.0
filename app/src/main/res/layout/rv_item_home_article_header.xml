@@ -1,0 +1,39 @@
+<android.support.v7.widget.CardView android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/usual_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_vp_height"
+        android:background="@drawable/usual_bg"
+        android:clickable="true">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_home_head"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <com.yyyu.interviewhelper.ui.widget.ViewpagerLooper
+            android:id="@+id/vpl_home"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/home_vp_indicator_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            app:dot_selected_color="@color/home_main_color" />
+        <TextView
+            android:id="@+id/tv_home_header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/vpl_home"
+            android:maxLines="2"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:text="标题标题标题标题标标题标题标题"
+            android:textColor="@color/my_white"
+            android:textSize="@dimen/home_vp_title_ts" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

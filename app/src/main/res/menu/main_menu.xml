@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/tb_main_search"
+        android:actionViewClass="android.widget.SearchView"
+        android:icon="@mipmap/icon_search"
+        android:title="搜素"
+        app:showAsAction="ifRoom|collapseActionView" />
+    <item
+        android:id="@+id/edit_article"
+        android:title="编辑文章" />
+    <item
+        android:id="@+id/add_fork"
+        android:title="扫码关注" />
+    <!--<item
+        android:id="@+id/tb_main_setting"
+        android:title="设置选项"/>-->
+    <item
+        android:id="@+id/tb_logout"
+        android:title="注销账号" />
+    <item
+        android:id="@+id/tb_exit_app"
+        android:title="退出程序" />
+
+</menu>

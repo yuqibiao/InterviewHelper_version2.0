@@ -2,11 +2,18 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:text="LOVE"/>
+    android:orientation="vertical"
+    android:background="@color/bg_gray_color">
+
+    <com.yyyu.interviewhelper.ui.widget.RefreshLayout
+        android:id="@+id/rl_love"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:padding="@dimen/love_rv_item_space"
+            android:id="@+id/rv_love"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.yyyu.interviewhelper.ui.widget.RefreshLayout>
 
 </LinearLayout>

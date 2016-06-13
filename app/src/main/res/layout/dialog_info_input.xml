@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="15dip">
+
+    <TextView
+        android:id="@+id/tv_modify_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="10dip"
+        android:text="修改信息"
+        android:theme="@style/et_article_edit"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/et_modify_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请填写你要修改的信息"
+        android:padding="10dip" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:text="确定" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dip"
+            android:text="取消" />
+    </LinearLayout>
+
+</LinearLayout>

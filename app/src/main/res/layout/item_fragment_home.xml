@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.yyyu.interviewhelper.ui.widget.RefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rf_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray_color">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_article"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</com.yyyu.interviewhelper.ui.widget.RefreshLayout>
+
+

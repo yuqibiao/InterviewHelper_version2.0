@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="#ffffffff">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/comm_user_icon"
+            android:layout_width="48dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:layout_marginTop="4dip"
+            android:src="@mipmap/icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_toRightOf="@+id/comm_user_icon"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="显示用户的名称"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_comm_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dip"
+                android:text="2015-8-26 12:32:12"
+                android:textColor="#77000000"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_comm_context"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:paddingBottom="10dip"
+        android:paddingLeft="60dip"
+        android:paddingRight="10dip"
+        android:paddingTop="0dip"
+        android:text="测水水水水水水水水水水水水水水水水水水水水水水水水水水水水水水水水水水水水" />
+
+    <View
+        android:layout_marginLeft="60dip"
+        style="@style/modify_gray_line" />
+
+</LinearLayout>

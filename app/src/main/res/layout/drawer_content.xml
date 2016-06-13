@@ -1,35 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.yyyu.interviewhelper.ui.widget.HideMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hl_main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.activity.MainActivity">
+    android:layout_height="match_parent">
 
-    <LinearLayout
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/cl_main"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/tb_main"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/home_main_color"
-            android:minHeight="@dimen/tb_height"
-            android:fitsSystemWindows="true"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" />
+            android:layout_height="match_parent">
 
-        <android.support.v4.view.ViewPager
-            android:id="@+id/vp_main"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_home"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/home_main_color"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical">
 
-    <include
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/main_btm_height"
-        android:layout_alignParentBottom="true"
-        layout="@layout/pt_main_bottom_menu" />
-</RelativeLayout>
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/tb_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tb_height"
+                    android:background="@color/home_main_color"
+                    android:gravity="center_horizontal"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                    app:navigationIcon="@mipmap/icon_menu"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                    app:title=" 主页"/>
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <include
+                layout="@layout/pt_main_bottom_menu"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/main_btm_height"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+</com.yyyu.interviewhelper.ui.widget.HideMenuLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/home_main_color">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/al_article"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/article_show_appbar_height"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/ctl_article"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/home_main_color"
+            app:expandedTitleMargin="20dp"
+            app:expandedTitleTextAppearance="@style/CollapsingToolbarTitleStyle.About"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:title="">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.8"
+                app:layout_scrollFlags="scroll|snap|enterAlways|enterAlwaysCollapsed">
+
+                <com.yyyu.interviewhelper.ui.widget.BlurredLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/iv_article_icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fitsSystemWindows="true"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/icon"
+                        android:transitionName="文章图片" />
+                </com.yyyu.interviewhelper.ui.widget.BlurredLayout>
+
+                <TextView
+                    android:id="@+id/tv_article_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="bottom"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="文章标题"
+                    android:textSize="22sp" />
+            </FrameLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/tb_article"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:navigationIcon="@mipmap/icon_back" >
+                <TextView
+                    android:id="@+id/tv_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textSize="16sp"
+                    android:layout_gravity="right"
+                    android:text="保存"/>
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <!--内容-->
+    <include layout="@layout/content_news_content" />
+
+    <View
+        android:id="@+id/v_master"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e0ffffff"
+        android:fitsSystemWindows="true"
+        android:visibility="gone" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_love"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@mipmap/icon_unlove"
+        app:backgroundTint="@color/colorAccent"
+        app:layout_anchor="@id/al_article"
+        app:layout_anchorGravity="bottom|end"
+        app:useCompatPadding="true" />
+
+    <!--expand-->
+
+    <com.yyyu.interviewhelper.ui.widget.FloatingMenuLayout
+        android:id="@+id/fml_article"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="32dp">
+
+        <ImageButton
+            android:id="@+id/ib_comm"
+            style="@style/fml_menu_ib"
+            android:src="@mipmap/icon_comm" />
+
+        <ImageButton
+            android:id="@+id/ib_dz"
+            style="@style/fml_menu_ib"
+            android:src="@mipmap/icon_dz" />
+
+        <ImageButton
+            android:id="@+id/ib_share"
+            style="@style/fml_menu_ib"
+            android:src="@mipmap/icon_share" />
+    </com.yyyu.interviewhelper.ui.widget.FloatingMenuLayout>
+
+    <com.yyyu.interviewhelper.ui.widget.MyFloatingActionButton
+        android:id="@+id/fab_expand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="32dp"
+        android:src="@mipmap/icon_expand"
+        app:backgroundTint="@color/colorAccent"
+        app:layout_behavior="com.yyyu.interviewhelper.ui.widget.ScrollAwareFABBehavior"
+        app:rippleColor="#33728dff" />
+
+</android.support.design.widget.CoordinatorLayout>

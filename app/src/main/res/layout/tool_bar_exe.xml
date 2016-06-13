@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tb_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/home_main_color"
+    android:fitsSystemWindows="true"
+    app:navigationIcon="@mipmap/icon_back"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:title=" "
+    app:titleTextColor="@color/my_white">
+
+    <RadioGroup
+        android:id="@+id/gv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:minWidth="150dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_left"
+            style="@style/tb_rb_left"
+            android:checked="true"
+            android:text="菜单一" />
+
+        <RadioButton
+            android:id="@+id/rb_right"
+            style="@style/tb_rb_right"
+            android:text="菜单二" />
+    </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/ib_exe_share"
+        android:layout_width="36dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:src="@mipmap/icon_share"
+        android:layout_gravity="right"/>
+    <ImageButton
+        android:id="@+id/ib_exe_save"
+        android:layout_width="36dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:src="@mipmap/icon_save"
+        android:layout_gravity="right"/>
+
+</android.support.v7.widget.Toolbar>

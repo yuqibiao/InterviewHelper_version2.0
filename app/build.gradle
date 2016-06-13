@@ -26,4 +26,9 @@ dependencies {
     compile 'com.android.support:cardview-v7:23.4.0'
     compile 'com.android.support:design:23.4.0'
     compile 'de.hdodenhof:circleimageview:1.3.0'
+    compile 'com.squareup.okhttp:okhttp:2.4.0'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.android.support:palette-v7:23.4.0'
+    compile 'eu.the4thfloor.volley:com.android.volley:2015.05.28'
+    compile project(':libzxing')
 }

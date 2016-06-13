@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_male"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:text="男"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="0"
+            android:src="@mipmap/icon_sex_checked" />
+    </LinearLayout>
+
+    <View
+        android:layout_marginLeft="0dp"
+        style="@style/modify_gray_line"/>
+
+    <LinearLayout
+        android:id="@+id/ll_female"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:text="女"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="0"
+            android:visibility="invisible"
+            android:src="@mipmap/icon_sex_checked" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -17,4 +17,41 @@
         <attr name="dot_selected_color" format="color"></attr>
     </declare-styleable>
 
+    <!-- 自定义CheckCodeTextView -->
+    <attr name="myTextSize" format="dimension" />
+    <attr name="myTextBg" format="color|reference" />
+    <attr name="myTextColor" format="color" />
+    <attr name="myText" format="string"/>
+    <declare-styleable name="myTextView1">
+        <attr name="myTextSize" />
+        <attr name="myTextBg" />
+        <attr name="myTextColor" />
+        <attr name="myText" />
+    </declare-styleable>
+
+    <!--CustomProgressBar -->
+    <declare-styleable name="pg_vip">
+        <attr name="vipFristColor" format="color"/>
+        <attr name="vipSecondColor" format="color"/>
+        <attr name="centerText" format="string"/>
+        <attr name="centerTextSize" format="dimension"/>
+        <attr name="centerTextColor" format="color"/>
+        <attr name="vipRingWdith" format="dimension"/>
+    </declare-styleable>
+
+    <!-- 自定义提示栏 属性-->
+    <attr name="tipsColor" format="color" />
+    <attr name="tipsTextSize" format="dimension" />
+    <attr name="lineColor" format="color" />
+    <attr name="lineHeight" format="dimension" />
+    <attr name="tipsText" format="string" />
+    <declare-styleable name="myTipsColumn">
+        <attr name="tipsText"/>
+        <attr name="tipsColor" />
+        <attr name="tipsTextSize" />
+        <attr name="lineColor" />
+        <attr name="lineHeight" />
+    </declare-styleable>
+
+
 </resources>

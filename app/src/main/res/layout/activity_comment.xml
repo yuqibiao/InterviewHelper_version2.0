@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_main_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_comment"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/home_main_color"
+        app:navigationIcon="@mipmap/icon_back"
+        app:title="文章评论"
+        app:titleTextColor="@color/my_white" />
+
+    <com.yyyu.interviewhelper.ui.widget.RefreshLayout
+        android:id="@+id/rl_comment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/bg_gray_color">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_comment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </com.yyyu.interviewhelper.ui.widget.RefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_comm"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0"
+        android:background="@color/home_main_color"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_comm"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="留下你的评论再走~~~"
+            android:padding="10dip"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/ib_send_comment"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/edit_send" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

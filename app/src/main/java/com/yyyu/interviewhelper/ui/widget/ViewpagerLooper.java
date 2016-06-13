@@ -140,6 +140,9 @@ public class ViewpagerLooper extends LinearLayout{
      * @param dataSize
      */
     public void addIndicator(int dataSize){
+        if(getChildCount()==dataSize){//--防止重复添加
+            return;
+        }
         this.dataSize = dataSize;
         mHandler.sendEmptyMessageDelayed(0, spaceTime);
         for(int i=0 ; i<dataSize ; i++){

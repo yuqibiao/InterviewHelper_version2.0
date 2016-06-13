@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.yyyu.interviewhelper.ui.widget.CustomProressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:centerText="ofyu"
+        app:centerTextColor="@color/home_main_color"
+        app:centerTextSize="14sp"
+        app:vipFristColor="@color/home_main_color_light"
+        app:vipSecondColor="@color/home_main_color" />
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="  数据加载中..."
+        android:textColor="@color/home_main_color"
+        android:textSize="12sp" />
+
+</LinearLayout>

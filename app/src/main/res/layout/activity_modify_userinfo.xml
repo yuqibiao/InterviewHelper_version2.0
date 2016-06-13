@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_modify_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_modify_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/home_main_color"
+        android:fitsSystemWindows="true"
+        app:navigationIcon="@mipmap/icon_back"
+        app:title="修改资料"
+        app:titleTextColor="@color/my_white">
+
+        <TextView
+            android:id="@+id/tv_modify_finished"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:padding="15dp"
+            android:textColor="@color/my_white"
+            android:textSize="18sp"
+            android:text="完成" />
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_modify_icon"
+        style="@style/modify_rl_item">
+
+        <TextView
+            style="@style/modify_left_title"
+            android:text="更换头像" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon" />
+    </RelativeLayout>
+
+    <View style="@style/modify_gray_line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_modify_bg"
+        style="@style/modify_rl_item">
+
+        <TextView
+            style="@style/modify_left_title"
+            android:text="更换主页背景" />
+    </RelativeLayout>
+
+    <View style="@style/modify_gray_line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_modify_name"
+        style="@style/modify_rl_item">
+
+        <TextView
+            style="@style/modify_left_title"
+            android:text="昵称" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/modify_right_title"
+            android:text="" />
+    </RelativeLayout>
+
+    <View style="@style/modify_gray_line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_modify_sex"
+        style="@style/modify_rl_item">
+
+        <TextView
+            style="@style/modify_left_title"
+            android:text="性别" />
+
+        <TextView
+            android:id="@+id/tv_sex"
+            style="@style/modify_right_title"
+            android:text="" />
+    </RelativeLayout>
+
+    <View style="@style/modify_gray_line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_modify_intro"
+        style="@style/modify_rl_item">
+
+        <TextView
+            android:id="@+id/tv_intro_title"
+            style="@style/modify_left_title"
+            android:text="个性签名" />
+
+        <TextView
+            android:id="@+id/tv_modify_intro"
+            style="@style/modify_right_title"
+            android:text="" />
+    </RelativeLayout>
+
+    <View style="@style/modify_gray_line" />
+
+
+</LinearLayout>

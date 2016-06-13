@@ -1,44 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg_gray_color"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
-    <RelativeLayout
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tl_home"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/home_vp_height">
-
+        android:layout_height="@dimen/tb_height"
+        android:background="@color/home_main_color"
+        android:fitsSystemWindows="true"
+        app:tabIndicatorColor="@color/tab_color"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/tab_color"
+        app:tabTextColor="@color/my_white" />
         <android.support.v4.view.ViewPager
-            android:id="@+id/vp_home_head"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-
-        <com.yyyu.interviewhelper.ui.widget.ViewpagerLooper
-            android:id="@+id/vpl_home"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/home_vp_indicator_height"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
-            app:dot_selected_color="@color/home_main_color"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/vpl_home"
-            android:maxLines="2"
-            android:paddingLeft="@dimen/activity_horizontal_margin"
-            android:paddingRight="@dimen/activity_horizontal_margin"
-            android:text="标题标题标题标题标题标题标题标题标题标题"
-            android:textColor="@color/my_white"
-            android:textSize="@dimen/home_vp_title_ts" />
-        <View
+            android:id="@+id/vp_home"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/bg_trans_gray_color" />
-    </RelativeLayout>
+            android:layout_height="match_parent" />
+
 
 </LinearLayout>

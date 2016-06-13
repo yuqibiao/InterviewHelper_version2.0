@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_white">
+
+    <com.yyyu.interviewhelper.ui.widget.MyScrollView
+        android:id="@+id/msv_show_exe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:id="@+id/tv_ans_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text=""
+                android:textSize="18sp" />
+            <TextView
+                android:background="#F0F0F0"
+                android:id="@+id/tv_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"/>
+
+            <com.yyyu.interviewhelper.ui.widget.MyListView
+                android:id="@+id/lv_answer"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:focusable="false" />
+
+            <Button
+                android:id="@+id/btn_mul_sure"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15sp"
+                android:text="确认答案"
+                android:textColor="@color/my_white"
+                android:layout_marginBottom="30dp"
+                android:visibility="gone" />
+
+            <!--答案解析，默认隐藏-->
+            <LinearLayout
+                android:id="@+id/ll_analysize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/home_main_color"/>
+                    <TextView
+                        android:id="@+id/tv_result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="16sp"
+                        android:text=" "/>
+                </LinearLayout>
+
+                <com.yyyu.interviewhelper.ui.widget.CustomTipsColumn
+                    style="@style/tips_coulumn_style"
+                    android:layout_marginTop="15dp"
+                    app:tipsColor="@color/home_main_color"
+                    app:lineColor="@color/home_main_color_light"
+                    app:tipsTextSize="16sp"
+                    app:tipsText="试题解析" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/home_main_color"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="16sp"
+                        android:text="考点："/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_analysize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="16sp"
+                    android:text="这是一条测试语句"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.yyyu.interviewhelper.ui.widget.MyScrollView>
+
+</LinearLayout>

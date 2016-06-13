@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="@dimen/main_btm_height"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/main_btm_menu_bg"
     android:orientation="horizontal">
     <com.yyyu.interviewhelper.ui.widget.ChangeColorView
         android:id="@+id/ccv_main"

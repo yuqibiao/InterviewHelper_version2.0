@@ -9,10 +9,32 @@
     <dimen name="main_btm_height">48dp</dimen>
     <dimen name="main_btm_padding">5dp</dimen>
     <dimen name="main_btm_ts">12sp</dimen>
+
     <!--主页轮播图-->
-    <dimen name="home_vp_height">200dp</dimen>
-    <dimen name="home_vp_indicator_height">20dp</dimen>
-    <dimen name="home_vp_title_ts">22sp</dimen>
+    <dimen name="home_vp_height">180dp</dimen>
+    <dimen name="home_vp_indicator_height">15dp</dimen>
+    <dimen name="home_vp_title_ts">20sp</dimen>
+    <dimen name="home_vp_header_tv_padding">3sp</dimen>
+    <!--主页 TabLayout-->
+    <dimen name="home_tab_height">35dp</dimen>
+    <!--主页文章RecyclerView Item-->
+    <dimen name="home_rv_item_height">100dp</dimen>
+    <dimen name="home_rv_item_space">10dp</dimen>
+    <dimen name="home_rv_item_radius">4dp</dimen>
+    <dimen name="home_rv_item_padding">5dp</dimen>
+    <dimen name="home_rv_item_cd_elevation">1dp</dimen>
+    <dimen name="home_rv_item_iv_size">80dp</dimen>
+
+    <!--习题页面-->
+    <dimen name="exe_rv_item_height">100dp</dimen>
+
+    <!--喜爱页面-->
+    <dimen name="love_rv_item_space">5dp</dimen>
+    <dimen name="love_rv_item_cv_elevation">2dp</dimen>
+    <dimen name="love_rv_item_cv_radius">4dp</dimen>
+    <dimen name="love_rv_item_tv_padding">5dp</dimen>
+    <dimen name="love_rv_item_tv_size">16sp</dimen>
+
     <!--navigation-->
     <dimen name="nav_header_vertical_spacing">10dp</dimen>
     <dimen name="nav_header_height">130dp</dimen>
@@ -23,5 +45,37 @@
     <dimen name="nav_header_username_ts">18sp</dimen>
     <dimen name="nav_header_QR_height">32dp</dimen>
     <dimen name="nav_header_QR_width">32dp</dimen>
+
+    <!--love_rv_ item-->
+    <dimen name="love_rv_item_height">120dp</dimen>
+    <dimen name="love_rv_item_tv_height">25dp</dimen>
+
+    <!--activity_article_show-->
+    <dimen name="article_show_appbar_height">220dp</dimen>
+    <dimen name="article_show_title_margin">20dp</dimen>
+
+    <!--login_activity-->
+    <dimen name="login_et_height">50dp</dimen>
+    <dimen name="login_et_margin_top">15dp</dimen>
+    <dimen name="login_et_drawable_padding">5dp</dimen>
+    <dimen name="login_tv_register_margin_right">30dp</dimen>
+    <dimen name="login_btn_height">50dp</dimen>
+    <dimen name="login_btn_margin_top">30dp</dimen>
+    <dimen name="login_tv_find_psw_margin_top">5dp</dimen>
+    <dimen name="login_tv_find_psw_padding_right">30dp</dimen>
+
+    <!--article_edit_pop-->
+    <dimen name="pop_width">120dp</dimen>
+    <dimen name="pop_height">150dp</dimen>
+    <dimen name="pop_rv_item_height">30dp</dimen>
+    <dimen name="pop_margin_btm">3dp</dimen>
+
+    <!--loading_dialog-->
+    <dimen name="loading_dialog_width">100dp</dimen>
+    <dimen name="loading_dialog_height">100dp</dimen>
+
+    <!--QRCode_dialog-->
+    <dimen name="qr_dialog_width">250dp</dimen>
+    <dimen name="qr_dialog_height">250dp</dimen>
 
 </resources>

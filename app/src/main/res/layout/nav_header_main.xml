@@ -15,6 +15,7 @@
         android:src="@mipmap/icon" />
 
     <ImageView
+        android:id="@+id/iv_QR"
         android:layout_width="@dimen/nav_header_QR_height"
         android:layout_height="@dimen/nav_header_QR_width"
         android:src="@mipmap/icon_qr_code"
@@ -25,7 +26,7 @@
         android:id="@+id/tv_username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="OfYu"
+        android:text="点击登录"
         android:layout_centerVertical="true"
         android:layout_toRightOf="@+id/civ_icon"
         android:layout_marginLeft="@dimen/nav_header_username_marginLeft"
